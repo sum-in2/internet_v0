@@ -64,7 +64,7 @@ export function Component() {
           <div className=" space-y-4">
             <h1 className="text-3xl md:text-4xl font-bold text-center">송수민</h1>
             <p className="text-lg md:text-xl text-center">
-              C#과 C를 주로 공부한 개발자 지망 송수민입니다.
+              C#과 C를 주로 공부한 개발자 지망생 송수민입니다.
             </p>
             <div className="flex space-x-4 justify-center">
               <Link href="#projects">
