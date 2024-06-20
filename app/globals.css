@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;

@@ -88,10 +88,7 @@ export function Component() {
                   className="rounded-t-lg"
                   height={300}
                   src="/Project1_Artesia.png"
-                  style={{
-                    aspectRatio: "400/300",
-                    objectFit: "cover",
-                  }}
+                  style={{ width: '100%', height: 'auto' }}
                   width={400}
                 />
                 <CardContent className="p-6">
@@ -109,10 +106,7 @@ export function Component() {
                   className="rounded-t-lg"
                   height={300}
                   src="/Project2_Feather.png"
-                  style={{
-                    aspectRatio: "400/300",
-                    objectFit: "cover",
-                  }}
+                  style={{ width: '100%', height: 'auto' }}
                   width={400}
                 />
                 <CardContent className="p-6">
@@ -131,10 +125,7 @@ export function Component() {
                   className="rounded-t-lg"
                   height={300}
                   src="/Project3_GithubLogo.png"
-                  style={{
-                    aspectRatio: "400/300",
-                    objectFit: "contain",
-                  }}
+                  style={{ width: '100%', height: 'auto' }}
                   width={400}
                 />
                 <CardContent className="p-6">
@@ -191,7 +182,7 @@ export function Component() {
               >
                 이름
               </label>
-              <Input id="name" placeholder="Enter your name" type="text" />
+              <Input id="name" placeholder="이름을 입력해주세요" type="text" />
             </div>
             <div className="mb-4">
               <label
@@ -200,7 +191,7 @@ export function Component() {
               >
                 이메일
               </label>
-              <Input id="email" placeholder="Enter your email" type="email" />
+              <Input id="email" placeholder="이메일을 입력해주세요" type="email" />
             </div>
             <div className="mb-4">
               <label
@@ -211,12 +202,12 @@ export function Component() {
               </label>
               <Textarea
                 id="message"
-                placeholder="Enter your message"
+                placeholder="문의 내용을 입력해주세요"
                 rows={5}
               />
             </div>
             <Button className="w-full" type="submit" variant="primary">
-              Send Message
+              메시지 보내기
             </Button>
           </form>
         </div>
