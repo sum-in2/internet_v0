@@ -57,7 +57,7 @@ export function Component() {
               Contact
             </Link>
           </nav>
-          <Button className="hidden md:inline-flex" variant="default">
+          <Button className="hidden md:inline-flex" variant="outline">
             Hire Me
           </Button>
         </div>
@@ -94,14 +94,11 @@ export function Component() {
           </div>
         </div>
       </section>
-      <section
-        className="bg-gray-100 dark:bg-gray-800 py-12 md:py-24"
-        id="projects"
-      >
+      <section className="bg-gray-100 dark:bg-gray-800 py-16 md:py-24" id="projects">
         <div className="container mx-auto px-6 md:px-12">
-          <h2 className="text-2xl md:text-3xl font-bold mb-8">My Projects</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            <Card>
+          <h2 className="text-2xl md:text-3xl font-bold mb-12">My Projects</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Card className="mb-8">
               <img
                 alt="Project 1"
                 className="rounded-t-lg"
@@ -113,14 +110,14 @@ export function Component() {
                 }}
                 width={400}
               />
-              <CardContent>
-                <CardTitle>Project 1</CardTitle>
-                <CardDescription>
+              <CardContent className="p-6">
+                <CardTitle className="text-xl font-bold mb-2">Project 1</CardTitle>
+                <CardDescription className="text-gray-600">
                   A captivating 3D adventure game built with Unity.
                 </CardDescription>
               </CardContent>
             </Card>
-            <Card>
+            <Card className="mb-8">
               <img
                 alt="Project 2"
                 className="rounded-t-lg"
@@ -132,15 +129,14 @@ export function Component() {
                 }}
                 width={400}
               />
-              <CardContent>
-                <CardTitle>Project 2</CardTitle>
-                <CardDescription>
-                  An immersive VR experience that pushes the boundaries of
-                  gaming.
+              <CardContent className="p-6">
+                <CardTitle className="text-xl font-bold mb-2">Project 2</CardTitle>
+                <CardDescription className="text-gray-600">
+                  An immersive VR experience that pushes the boundaries of gaming.
                 </CardDescription>
               </CardContent>
             </Card>
-            <Card>
+            <Card className="mb-8">
               <img
                 alt="Project 3"
                 className="rounded-t-lg"
@@ -152,9 +148,9 @@ export function Component() {
                 }}
                 width={400}
               />
-              <CardContent>
-                <CardTitle>Project 3</CardTitle>
-                <CardDescription>
+              <CardContent className="p-6">
+                <CardTitle className="text-xl font-bold mb-2">Project 3</CardTitle>
+                <CardDescription className="text-gray-600">
                   A multiplayer online game with a unique and engaging gameplay.
                 </CardDescription>
               </CardContent>
