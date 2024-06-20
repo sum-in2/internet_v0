@@ -227,17 +227,6 @@ export function Component() {
             <CodeIcon className="h-6 w-6 mr-2" />
             <span className="text-lg font-bold">송수민</span>
           </div>
-          <div className="flex space-x-4">
-            <Link className="hover:underline" href="#">
-              Privacy Policy
-            </Link>
-            <Link className="hover:underline" href="#">
-              Terms of Service
-            </Link>
-            <Link className="hover:underline" href="#">
-              문의
-            </Link>
-          </div>
         </div>
       </footer>
     </div>
