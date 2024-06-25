@@ -88,8 +88,7 @@ export function Component() {
                   className="rounded-t-lg"
                   height={300}
                   src="/Project1_Artesia.png"
-                  style={{ width: '100%', height: 'auto' }}
-                  width={400}
+                  style={{ width: '100%' }}
                 />
                 <CardContent className="p-6">
                   <CardTitle className="text-xl font-bold mb-2">Artesia</CardTitle>
@@ -106,8 +105,7 @@ export function Component() {
                   className="rounded-t-lg"
                   height={300}
                   src="/Project2_Feather.png"
-                  style={{ width: '100%', height: 'auto' }}
-                  width={400}
+                  style={{ width: '100%' }}
                 />
                 <CardContent className="p-6">
                   <CardTitle className="text-xl font-bold mb-2">Feather</CardTitle>
@@ -125,8 +123,7 @@ export function Component() {
                   className="rounded-t-lg"
                   height={300}
                   src="/Project3_GithubLogo.png"
-                  style={{ width: '100%', height: 'auto' }}
-                  width={400}
+                  style={{ width: '100%' }}
                 />
                 <CardContent className="p-6">
                   <CardTitle className="text-xl font-bold mb-2">깃허브</CardTitle>
@@ -174,7 +171,7 @@ export function Component() {
       >
         <div className="container mx-auto px-6 md:px-12">
           <h2 className="text-2xl md:text-3xl font-bold mb-8">문의</h2>
-          <form className="max-w-md mx-auto">
+          <form className="max-w-md mx-auto" >
             <div className="mb-4">
               <label
                 className="block text-gray-700 dark:text-gray-300 font-medium mb-2"
@@ -206,7 +203,7 @@ export function Component() {
                 rows={5}
               />
             </div>
-            <Button className="w-full" type="submit" variant="primary">
+            <Button className="w-full cursor-x" type="button" variant="outline">
               메시지 보내기
             </Button>
           </form>
