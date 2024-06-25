@@ -23,6 +23,8 @@ To read more about using these font, please visit the Next.js documentation:
 - App Directory: https://nextjs.org/docs/app/building-your-application/optimizing/fonts
 - Pages Directory: https://nextjs.org/docs/pages/building-your-application/optimizing/fonts
 **/
+"use client"
+import { useState } from 'react';
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import {
@@ -35,6 +37,12 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 
 export function Component() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <div className="flex flex-col min-h-screen">
       <header className="bg-gray-900 text-white py-4 px-6 md:px-12 fixed top-0 w-full z-50">
@@ -57,7 +65,28 @@ export function Component() {
               문의하기
             </Link>
           </nav>
+          <div className="md:hidden">
+            <button onClick={toggleMenu} className="focus:outline-none">
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d={isOpen ? 'M6 18L18 6M6 6l12 12' : 'M4 6h16M4 12h16M4 18h16'}></path>
+              </svg>
+            </button>
+          </div>
         </div>
+        <nav className={`md:hidden ${isOpen ? 'block' : 'hidden'} bg-gray-900 text-white py-2`}>
+          <Link className="block px-4 py-2 hover:underline" href="#">
+            메인
+          </Link>
+          <Link className="block px-4 py-2 hover:underline" href="#projects">
+            프로젝트
+          </Link>
+          <Link className="block px-4 py-2 hover:underline" href="#skills">
+            기술
+          </Link>
+          <Link className="block px-4 py-2 hover:underline" href="#contact">
+            문의하기
+          </Link>
+        </nav>
       </header>
       <section className="bg-gray-900 text-white py-12 md:py-24">
         <div className="container mx-auto px-4 md:px-8">
