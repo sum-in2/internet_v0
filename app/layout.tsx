@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "송수민",
+  title: "송수민의 포트폴리오",
   description: "송수민 포트폴리오 사이트입니다.",
 };
 
